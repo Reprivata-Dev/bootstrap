@@ -82,6 +82,7 @@ $theme-colors: (
 // $scarlet-900: shade-color($scarlet, 80%);
 
 // spacer
+$spacer: 16px;
 $spacers: (
   0: 0,
   1: 2px,
@@ -228,3 +229,16 @@ $btn-border-radius-sm: $border-radius;
 $btn-border-radius-lg: $border-radius;
 
 $btn-focus-box-shadow: none;
+
+// Cards
+
+// scss-docs-start card-variables
+$card-spacer-y: $spacer;
+$card-subtitle-font-size: $font-size-lg;
+$card-border-radius: $border-radius;
+
+// scss-docs-start modal-variables
+$modal-inner-padding: $spacer !default;
+$modal-inner-padding-bottom: $spacer + 12;
+$modal-header-border-color: $white;
+$modal-header-padding-x: $modal-inner-padding !default;
