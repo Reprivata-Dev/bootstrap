@@ -238,7 +238,13 @@ $card-subtitle-font-size: $font-size-lg;
 $card-border-radius: $border-radius;
 
 // scss-docs-start modal-variables
-$modal-inner-padding: $spacer !default;
+$modal-inner-padding-top: $spacer;
+$modal-inner-padding-right: $spacer + 8;
 $modal-inner-padding-bottom: $spacer + 12;
+$modal-header-padding: $spacer + 8;
+$modal-header-padding-bottom: 0;
 $modal-header-border-color: $white;
-$modal-header-padding-x: $modal-inner-padding !default;
+
+$modal-footer-padding-top: $spacer / 2;
+$modal-footer-padding-sides: $spacer + 8;
+// $modal-header-padding-x: $modal-inner-padding !default;

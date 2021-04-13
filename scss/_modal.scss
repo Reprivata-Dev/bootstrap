@@ -118,6 +118,7 @@
   align-items: center;
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
+  padding-bottom: $modal-header-padding-bottom;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
   @include border-top-radius($modal-content-inner-border-radius);
 
@@ -141,7 +142,7 @@
   // Enable `flex-grow: 1` so that the body take up as much space as possible
   // when there should be a fixed height on `.modal-dialog`.
   flex: 1 1 auto;
-  padding: $modal-inner-padding;
+  padding: $modal-inner-padding-top $modal-inner-padding-right;
 }
 
 // Footer (for actions)
@@ -151,7 +152,8 @@
   flex-shrink: 0;
   align-items: center; // vertically center
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
-  padding: $modal-inner-padding - $modal-footer-margin-between / 2;
+  // padding: $modal-inner-padding - $modal-footer-margin-between / 2;
+  padding: $modal-footer-padding-top $modal-footer-padding-sides;
   padding-bottom: $modal-inner-padding-bottom;
   // border-top: $modal-footer-border-width solid $modal-footer-border-color;
   @include border-bottom-radius($modal-content-inner-border-radius);
