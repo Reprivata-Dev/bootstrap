@@ -3584,10 +3584,11 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link {
   margin-bottom: -1px;
+  color: #000;
   background: none;
   border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
@@ -3600,9 +3601,11 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  font-weight: 700;
+  color: #000;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  border-top: #bf0025 2px solid;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -3611,13 +3614,14 @@ textarea.form-control-lg {
 }
 
 .nav-pills .nav-link {
+  color: #000;
   background: none;
   border: 0;
   border-radius: 0.25rem;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  background-color: #bf0025;
   background-color: #0d6efd;
 }
 
