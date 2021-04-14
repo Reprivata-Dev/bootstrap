@@ -196,6 +196,8 @@ $lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 400;
 $small-font-size: 0.889rem;
 
+// Style anchor elements.
+$link-color: $red;
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -272,5 +274,6 @@ $nav-tabs-link-color: $black;
 $nav-tabs-link-active-font-weight: 700;
 
 //Nav pills styles
-$nav-pills-link-active-background-color: $primary;
+$nav-pills-link-active-background-color: $primary !important;
 $nav-pills-link-color: $black;
+$nav-pills-active-link-color: $white;

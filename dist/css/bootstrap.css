@@ -216,7 +216,7 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #bf0025;
   text-decoration: underline;
 }
 a:hover {
@@ -3621,7 +3621,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #bf0025;
+  color: #fff;
+  background-color: #bf0025 !important;
   background-color: #0d6efd;
 }
 

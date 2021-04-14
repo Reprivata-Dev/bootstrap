@@ -94,7 +94,9 @@
 
   .nav-link.active,
   .show > .nav-link {
+    color: $nav-pills-active-link-color;
     background-color: $nav-pills-link-active-background-color;
+
     @include gradient-bg($nav-pills-link-active-bg);
   }
 }
