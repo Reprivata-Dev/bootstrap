@@ -196,6 +196,8 @@ $lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 400;
 $small-font-size: 0.889rem;
 
+// Style anchor elements.
+$link-color: $red;
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -254,7 +256,7 @@ $accordion-header-font-size: $font-size-base;
 $accordion-button-active-color: $dark;
 $accordion-button-active-bg: none;
 $accordion-button-focus-border-color: $blue;
-$accordion-button-focus-outline: $blue $border-width solid;
+// $accordion-button-focus-outline: $blue $border-width solid;
 $accordion-button-padding-x: $spacer;
 $accordion-icon-width: $font-size-base;
 
@@ -270,3 +272,16 @@ $input-padding-x: $spacer / 2;
 
 //Form Check
 $form-check-input-checked-bg-color: $primary;
+//Tabs styles
+$nav-tabs-link-active-border-top-color: $primary map-get($border-widths, 2)
+  solid;
+$nav-tabs-border-radius: 0;
+// $nav-tabs-link-active-border-top-color: $primary 5px solid;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-color: $black;
+$nav-tabs-link-active-font-weight: 700;
+
+//Nav pills styles
+$nav-pills-link-active-background-color: $primary;
+$nav-pills-link-color: $black;
+$nav-pills-active-link-color: $white;
