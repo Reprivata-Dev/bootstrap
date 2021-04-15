@@ -90,6 +90,12 @@
     background: none;
     border: 0;
     @include border-radius($nav-pills-border-radius);
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
   }
 
   .nav-link.active,
