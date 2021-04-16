@@ -196,6 +196,10 @@ $lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 400;
 $small-font-size: 0.889rem;
 
+$subtitle-lg-font-size: 1.125rem;
+$subtitle-sm-font-size: 1rem;
+$caption-font-size: 0.79rem;
+
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -264,9 +268,30 @@ $accordion-body-padding-bottom: $spacer + 8;
 
 //Form Control
 $input-border-color: $black;
-$input-font-size: $font-size-sm;
+$input-font-size: $caption-font-size;
 $input-padding-y: $spacer / 2;
 $input-padding-x: $spacer / 2;
+$input-line-height: $input-btn-line-height;
+$input-focus-border-color: $blue;
+$input-focus-border: map-get($border-widths, 2) solid;
 
+//Forms
+$form-text-font-size: $caption-font-size;
+$form-text-margin-top: map-get($spacers, 4);
 //Form Check
 $form-check-input-checked-bg-color: $primary;
+
+//Form select
+$form-select-border-color: $input-border-color;
+$form-select-font-size: $caption-font-size;
+$form-select-line-height: $input-btn-line-height;
+$form-select-padding-y: $spacer / 2;
+$form-select-padding-x: $spacer / 2;
+$form-select-indicator-padding: $spacer * 2;
+//Validation
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+$form-feedback-icon-invalid: none;
+$form-feedback-icon-valid: none;
+$form-feedback-font-size: $form-text-font-size;
+$form-feedback-margin-top: $form-text-margin-top;
