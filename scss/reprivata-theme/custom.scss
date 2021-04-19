@@ -82,73 +82,44 @@ $theme-colors: (
 // $scarlet-900: shade-color($scarlet, 80%);
 
 // spacer
-$spacer: 16px;
+$spacer: 1rem;
 $spacers: (
   0: 0,
-  1: 2px,
-  2: 4px,
-  3: 6px,
-  4: 8px,
-  5: 10px,
-  6: 12px,
-  7: 14px,
-  8: 16px,
-  9: 18px,
-  10: 20px,
-  11: 22px,
-  12: 24px,
-  13: 26px,
-  14: 28px,
-  15: 30px,
-  16: 32px,
-  17: 34px,
-  18: 36px,
-  19: 38px,
-  20: 40px,
-  21: 42px,
-  22: 44px,
-  23: 46px,
-  24: 48px,
-  25: 49px,
-  26: 50px,
-  27: 52px,
-  28: 54px,
-  29: 56px,
-  30: 58px,
-  31: 60px,
-  32: 62px,
-  33: 64px,
-  34: 66px,
-  35: 68px,
-  36: 70px,
-  37: 72px,
-  38: 74px,
-  39: 76px,
-  41: 78px,
-  42: 80px,
+  1: $spacer / 8,
+  // 2
+  2: $spacer / 4,
+  // 4
+  3: $spacer / 2,
+  // 8
 );
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 600px,
-  md: 960px,
-  lg: 1280px,
-  xl: 1920px,
+  sm: 37.5rem,
+  //600
+  md: 60rem,
+  //960
+  lg: 80rem,
+  //1280
+  xl: 120rem,
+  //1920
 );
 
-$border-width: 1px;
+$border-width: 0.0625rem;
 $border-widths: (
-  1: 1px,
-  2: 2px,
-  3: 3px,
-  4: 4px,
-  5: 5px,
+  1: 0.0625rem,
+  2: 0.125rem,
+  3: 0.1875rem,
+  //3
+  4: 0.25rem,
+  //4
+  5: 0.3125rem,
 );
 
 // scss-docs-start border-radius-variables
-$border-radius: 4px;
-$border-radius-sm: 2px;
-$border-radius-lg: 4px;
+$border-radius: 0.25rem;
+$border-radius-sm: 0.125rem;
+$border-radius-lg: 0.25rem;
 $border-radius-pill: 50rem;
 
 // Typography
@@ -165,6 +136,10 @@ $font-size-root: 16px;
 $font-size-base: 1rem;
 $font-size-sm: $font-size-base * 0.889;
 $font-size-lg: $font-size-base * 1.125;
+
+$line-height-base: 1.5;
+$line-height-sm: 0.889;
+$line-height-lg: 2;
 
 $h1-font-size: $font-size-base * 2.281;
 $h2-font-size: $font-size-base * 2.027;
@@ -202,19 +177,16 @@ $small-font-size: 0.889rem;
 
 // scss-docs-start input-btn-variables
 
-$input-btn-padding-y: 8px;
-$input-btn-padding-x: 16px;
-$input-btn-font-family: $open-sans;
+$input-btn-padding-y: map-get($spacers, 3); //8px
+$input-btn-padding-x: map-get($spacers, 3) * 2;
 $input-btn-font-size: $small-font-size;
-$input-btn-line-height: 14px;
-$input-btn-focus-width: 2px;
-// $input-btn-focus-color-opacity: none;
+$input-btn-line-height: $line-height-sm;
+$input-btn-focus-width: map-get($spacers, 1);
 $input-btn-focus-color: $blue;
 $input-btn-focus-blur: none;
-// $input-btn-focus-box-shadow: 0;
 
-$input-btn-padding-y-sm: 8px;
-$input-btn-padding-x-sm: 4px;
+$input-btn-padding-y-sm: map-get($spacers, 3);
+$input-btn-padding-x-sm: map-get($spacers, 2);
 $input-btn-font-size-sm: $input-btn-font-size;
 
 $input-btn-border-width: $border-width;
@@ -228,8 +200,6 @@ $btn-border-radius: $border-radius;
 $btn-border-radius-sm: $border-radius;
 $btn-border-radius-lg: $border-radius;
 
-$btn-focus-box-shadow: none;
-
 // Cards
 
 // scss-docs-start card-variables
@@ -239,12 +209,13 @@ $card-border-radius: $border-radius;
 
 // scss-docs-start modal-variables
 $modal-inner-padding-top: $spacer;
-$modal-inner-padding-right: $spacer + 8;
-$modal-inner-padding-bottom: $spacer + 12;
-$modal-header-padding: $spacer + 8;
-$modal-header-padding-bottom: 0;
-$modal-header-border-color: $white;
+$modal-inner-padding-right: map-get($spacers, 1) * 12;
+$modal-header-padding-y: map-get($spacers, 1) * 12;
+$modal-header-padding-x: map-get($spacers, 1) * 12;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x 0
+  $modal-header-padding-x;
 
-$modal-footer-padding-top: $spacer / 2;
-$modal-footer-padding-sides: $spacer + 8;
-// $modal-header-padding-x: $modal-inner-padding !default;
+$modal-footer-padding-y: $spacer;
+$modal-footer-padding-x: $spacer;
+$modal-footer-padding: $modal-footer-padding-y $modal-footer-padding-x
+  map-get($spacers, 1) * 12;
