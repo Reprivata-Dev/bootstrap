@@ -31,12 +31,8 @@
 
   .btn-check:focus + &,
   &:focus {
-    border: $input-focus-border $input-focus-border-color;
     outline: 0;
-    // color: $input-focus-color;
-    // background-color: $input-focus-bg;
-
-    // box-shadow: $btn-focus-box-shadow;
+    box-shadow: $btn-focus-box-shadow;
   }
 
   .btn-check:checked + &,
@@ -45,9 +41,9 @@
   &.active {
     @include box-shadow($btn-active-box-shadow);
 
-    // &:focus {
-    //   @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    // }
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
   }
 
   &:disabled,
