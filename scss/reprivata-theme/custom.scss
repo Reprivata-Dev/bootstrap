@@ -212,6 +212,21 @@ $btn-border-radius-sm: $border-radius;
 $btn-border-radius-lg: $border-radius;
 $btn-focus-box-shadow: $input-btn-focus-box-shadow;
 $btn-active-box-shadow: $input-btn-focus-box-shadow;
+
+//Tabs styles
+$nav-tabs-link-active-border-top-color: $primary map-get($border-widths, 2)
+  solid;
+$nav-tabs-border-radius: 0;
+// $nav-tabs-link-active-border-top-color: $primary 5px solid;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-color: $black;
+$nav-tabs-link-active-font-weight: 700;
+
+//Nav pills styles
+$nav-pills-link-active-background-color: $primary !important;
+$nav-pills-link-color: $black;
+$nav-pills-active-link-color: $white;
+
 // Cards
 
 // scss-docs-start card-variables
