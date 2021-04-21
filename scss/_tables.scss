@@ -11,6 +11,8 @@
   --#{$variable-prefix}table-hover-color: #{$table-hover-color};
   --#{$variable-prefix}table-hover-bg: #{$table-hover-bg};
 
+  // --bs-table-accent-bg: #{$table-striped-dark-bg};
+
   width: 100%;
   margin-bottom: $spacer;
   color: $table-color;
@@ -100,6 +102,16 @@
     --#{$variable-prefix}table-accent-bg: var(
       --#{$variable-prefix}table-striped-bg
     );
+    color: var(--#{$variable-prefix}table-striped-color);
+  }
+}
+
+.table-dark .table-striped {
+  > tbody > tr:nth-of-type(#{$table-striped-order}) {
+    --#{$variable-prefix}table-accent-bg: var(
+      --#{$variable-prefix}table-striped-bg
+    );
+    // box-shadow: $table-striped-dark;
     color: var(--#{$variable-prefix}table-striped-color);
   }
 }

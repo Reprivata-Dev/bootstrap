@@ -6,7 +6,7 @@ $gray-400: #ced4da;
 $gray-500: #adb5bd;
 $gray-600: #6c757d;
 $gray-700: #495057;
-$gray-800: #343a40;
+$gray-800: #3c3f44;
 $gray-900: #212428;
 $black: #000;
 
@@ -292,3 +292,6 @@ $form-feedback-margin-top: $form-text-margin-top;
 
 $table-font-size: $font-size-lg;
 $table-data-padding: 0;
+$table-cell-padding-x: $spacer;
+// $table-striped-dark: inset 0 0 0 9999px $blue;
+// $table-striped-dark-bg: $blue;
