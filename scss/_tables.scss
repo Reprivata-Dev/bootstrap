@@ -16,6 +16,8 @@
   color: $table-color;
   vertical-align: $table-cell-vertical-align;
   border-color: $table-border-color;
+  font-size: $table-font-size;
+  line-height: $line-height-sm;
 
   // Target th & td
   // We need the child combinator to prevent styles leaking to nested tables which doesn't have a `.table` class.
@@ -38,11 +40,10 @@
   }
 
   // Highlight border color between thead, tbody and tfoot.
-  > :not(:last-child) > :last-child > * {
-    border-bottom-color: $table-group-separator-color;
-  }
+  // > :not(:last-child) > :last-child > * {
+  //   border-bottom-color: $table-group-separator-color;
+  // }
 }
-
 
 //
 // Change placement of captions with a class
@@ -51,7 +52,6 @@
 .caption-top {
   caption-side: top;
 }
-
 
 //
 // Condensed table w/ half padding
@@ -63,7 +63,6 @@
     padding: $table-cell-padding-y-sm $table-cell-padding-x-sm;
   }
 }
-
 
 // Border versions
 //
@@ -98,7 +97,9 @@
 
 .table-striped {
   > tbody > tr:nth-of-type(#{$table-striped-order}) {
-    --#{$variable-prefix}table-accent-bg: var(--#{$variable-prefix}table-striped-bg);
+    --#{$variable-prefix}table-accent-bg: var(
+      --#{$variable-prefix}table-striped-bg
+    );
     color: var(--#{$variable-prefix}table-striped-color);
   }
 }
@@ -108,7 +109,9 @@
 // The `.table-active` class can be added to highlight rows or cells
 
 .table-active {
-  --#{$variable-prefix}table-accent-bg: var(--#{$variable-prefix}table-active-bg);
+  --#{$variable-prefix}table-accent-bg: var(
+    --#{$variable-prefix}table-active-bg
+  );
   color: var(--#{$variable-prefix}table-active-color);
 }
 
@@ -118,11 +121,12 @@
 
 .table-hover {
   > tbody > tr:hover {
-    --#{$variable-prefix}table-accent-bg: var(--#{$variable-prefix}table-hover-bg);
+    --#{$variable-prefix}table-accent-bg: var(
+      --#{$variable-prefix}table-hover-bg
+    );
     color: var(--#{$variable-prefix}table-hover-color);
   }
 }
-
 
 // Table variants
 //
