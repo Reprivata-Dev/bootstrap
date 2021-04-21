@@ -71,15 +71,25 @@ $theme-colors: (
   "dark": $dark,
 );
 
-// $scarlet-100: tint-color($scarlet, 80%);
-// $scarlet-200: tint-color($scarlet, 60%);
-// $scarlet-300: tint-color($scarlet, 40%);
-// $scarlet-400: tint-color($scarlet, 20%);
-// $scarlet-500: $scarlet;
-// $scarlet-600: shade-color($scarlet, 20%);
-// $scarlet-700: shade-color($scarlet, 40%);
-// $scarlet-800: shade-color($scarlet, 60%);
-// $scarlet-900: shade-color($scarlet, 80%);
+$scarlet-100: tint-color($scarlet, 80%);
+$scarlet-200: tint-color($scarlet, 60%);
+$scarlet-300: tint-color($scarlet, 30%);
+$scarlet-400: tint-color($scarlet, 20%);
+$scarlet-500: $scarlet;
+$scarlet-600: shade-color($scarlet, 20%);
+$scarlet-700: shade-color($scarlet, 40%);
+$scarlet-800: shade-color($scarlet, 60%);
+$scarlet-900: shade-color($scarlet, 80%);
+
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;
 
 // spacer
 $spacer: 1rem;
@@ -291,3 +301,4 @@ $form-feedback-margin-top: $form-text-margin-top;
 //Alert styles
 
 $alert-border-radius: 0;
+$alert-left-border: map-get($border-widths, 4);
