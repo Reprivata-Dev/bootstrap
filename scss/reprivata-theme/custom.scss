@@ -171,6 +171,10 @@ $lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 400;
 $small-font-size: 0.889rem;
 
+$subtitle-lg-font-size: 1.125rem;
+$subtitle-sm-font-size: 1rem;
+$caption-font-size: 0.79rem;
+
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -191,6 +195,13 @@ $input-btn-font-size-sm: $input-btn-font-size;
 
 $input-btn-border-width: $border-width;
 
+$input-btn-focus-width: 0.125rem;
+$input-btn-focus-color-opacity: 0.25;
+$input-btn-focus-color: rgba(0, 162, 243, 1);
+$input-btn-focus-blur: 0;
+$input-btn-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width
+  $input-btn-focus-color;
+
 $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: $input-btn-padding-x;
 $btn-font-size: $small-font-size;
@@ -199,6 +210,22 @@ $btn-line-height: $input-btn-line-height;
 $btn-border-radius: $border-radius;
 $btn-border-radius-sm: $border-radius;
 $btn-border-radius-lg: $border-radius;
+$btn-focus-box-shadow: $input-btn-focus-box-shadow;
+$btn-active-box-shadow: $input-btn-focus-box-shadow;
+
+//Tabs styles
+$nav-tabs-link-active-border-top-color: $primary map-get($border-widths, 2)
+  solid;
+$nav-tabs-border-radius: 0;
+// $nav-tabs-link-active-border-top-color: $primary 5px solid;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-color: $black;
+$nav-tabs-link-active-font-weight: 700;
+
+//Nav pills styles
+$nav-pills-link-active-background-color: $primary !important;
+$nav-pills-link-color: $black;
+$nav-pills-active-link-color: $white;
 
 // Cards
 
@@ -232,3 +259,31 @@ $accordion-icon-width: $font-size-base;
 $accordion-body-padding-y: $spacer / 2;
 $accordion-body-padding-x: $spacer;
 $accordion-body-padding-bottom: map-get($spacers, 2) * 6;
+
+//Form Control
+$input-border-color: $black;
+$input-font-size: $caption-font-size;
+$input-padding-y: $spacer / 2;
+$input-padding-x: $spacer / 2;
+$input-line-height: $input-btn-line-height;
+
+//Forms
+$form-text-font-size: $caption-font-size;
+$form-text-margin-top: map-get($spacers, 4);
+//Form Check
+$form-check-input-checked-bg-color: $primary;
+
+//Form select
+$form-select-border-color: $input-border-color;
+$form-select-font-size: $caption-font-size;
+$form-select-line-height: $input-btn-line-height;
+$form-select-padding-y: $spacer / 2;
+$form-select-padding-x: $spacer / 2;
+$form-select-indicator-padding: $spacer * 2;
+//Validation
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+$form-feedback-icon-invalid: none;
+$form-feedback-icon-valid: none;
+$form-feedback-font-size: $form-text-font-size;
+$form-feedback-margin-top: $form-text-margin-top;

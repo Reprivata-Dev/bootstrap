@@ -43,6 +43,7 @@
 
   .nav-link {
     margin-bottom: -$nav-tabs-border-width;
+    color: $nav-tabs-link-color;
     background: none;
     border: $nav-tabs-border-width solid transparent;
     @include border-top-radius($nav-tabs-border-radius);
@@ -63,9 +64,12 @@
 
   .nav-link.active,
   .nav-item.show .nav-link {
+    font-weight: $nav-tabs-link-active-font-weight;
     color: $nav-tabs-link-active-color;
+
     background-color: $nav-tabs-link-active-bg;
     border-color: $nav-tabs-link-active-border-color;
+    border-top: $nav-tabs-link-active-border-top-color;
   }
 
   .dropdown-menu {
@@ -76,25 +80,32 @@
   }
 }
 
-
 //
 // Pills
 //
 
 .nav-pills {
   .nav-link {
+    color: $nav-pills-link-color;
     background: none;
     border: 0;
     @include border-radius($nav-pills-border-radius);
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
   }
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
+    color: $nav-pills-active-link-color;
+    background-color: $nav-pills-link-active-background-color;
+
     @include gradient-bg($nav-pills-link-active-bg);
   }
 }
-
 
 //
 // Justified variants
@@ -123,7 +134,6 @@
     width: 100%; // Make sure button will grow
   }
 }
-
 
 // Tabbable tabs
 //
