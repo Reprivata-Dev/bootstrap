@@ -219,3 +219,16 @@ $modal-footer-padding-y: $spacer;
 $modal-footer-padding-x: $spacer;
 $modal-footer-padding: $modal-footer-padding-y $modal-footer-padding-x
   map-get($spacers, 1) * 12;
+
+//Accordion styles
+$accordion-header-font-size: $font-size-base;
+$accordion-button-active-color: $dark;
+$accordion-button-active-bg: none;
+$accordion-button-focus-border-color: $blue;
+$accordion-button-focus-outline: $blue $border-width solid;
+$accordion-button-padding-x: $spacer;
+$accordion-icon-width: $font-size-base;
+
+$accordion-body-padding-y: $spacer / 2;
+$accordion-body-padding-x: $spacer;
+$accordion-body-padding-bottom: map-get($spacers, 2) * 6;

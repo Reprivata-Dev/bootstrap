@@ -9,6 +9,7 @@
   width: 100%;
   padding: $accordion-button-padding-y $accordion-button-padding-x;
   @include font-size($font-size-base);
+  line-height: $line-height-sm;
   color: $accordion-button-color;
   text-align: left; // Reset button style
   background-color: $accordion-button-bg;
@@ -23,7 +24,6 @@
     box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
 
     &::after {
-      background-image: escape-svg($accordion-button-active-icon);
       transform: $accordion-icon-transform;
     }
   }
@@ -55,6 +55,7 @@
 
 .accordion-header {
   margin-bottom: 0;
+  font-size: $accordion-header-font-size;
 }
 
 .accordion-item {
@@ -89,8 +90,8 @@
 
 .accordion-body {
   padding: $accordion-body-padding-y $accordion-body-padding-x;
+  padding-bottom: $accordion-body-padding-bottom;
 }
-
 
 // Flush accordion items
 //
@@ -106,8 +107,12 @@
     border-left: 0;
     @include border-radius(0);
 
-    &:first-child { border-top: 0; }
-    &:last-child { border-bottom: 0; }
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
 
     .accordion-button {
       @include border-radius(0);
