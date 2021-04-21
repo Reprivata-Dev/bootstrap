@@ -28,7 +28,7 @@
       @include border-top-radius($card-inner-border-radius);
     }
 
-    &:last-child  {
+    &:last-child {
       border-bottom-width: 0;
       @include border-bottom-radius($card-inner-border-radius);
     }
@@ -57,6 +57,7 @@
 .card-subtitle {
   margin-top: -$card-title-spacer-y / 2;
   margin-bottom: 0;
+  font-size: $card-subtitle-font-size;
 }
 
 .card-text:last-child {
@@ -85,7 +86,9 @@
   border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
-    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+    @include border-radius(
+      $card-inner-border-radius $card-inner-border-radius 0 0
+    );
   }
 }
 
@@ -96,10 +99,11 @@
   border-top: $card-border-width solid $card-border-color;
 
   &:last-child {
-    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+    @include border-radius(
+      0 0 $card-inner-border-radius $card-inner-border-radius
+    );
   }
 }
-
 
 //
 // Header navs
@@ -150,7 +154,6 @@
 .card-img-bottom {
   @include border-bottom-radius($card-inner-border-radius);
 }
-
 
 //
 // Card groups
