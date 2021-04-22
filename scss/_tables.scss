@@ -12,14 +12,16 @@
   --#{$variable-prefix}table-hover-bg: #{$table-hover-bg};
 
   // --bs-table-accent-bg: #{$table-striped-dark-bg};
-
   width: 100%;
   margin-bottom: $spacer;
+  font-size: $table-font-size;
+
+  line-height: $line-height-sm;
+
   color: $table-color;
   vertical-align: $table-cell-vertical-align;
+
   border-color: $table-border-color;
-  font-size: $table-font-size;
-  line-height: $line-height-sm;
 
   // Target th & td
   // We need the child combinator to prevent styles leaking to nested tables which doesn't have a `.table` class.
@@ -102,16 +104,6 @@
     --#{$variable-prefix}table-accent-bg: var(
       --#{$variable-prefix}table-striped-bg
     );
-    color: var(--#{$variable-prefix}table-striped-color);
-  }
-}
-
-.table-dark .table-striped {
-  > tbody > tr:nth-of-type(#{$table-striped-order}) {
-    --#{$variable-prefix}table-accent-bg: var(
-      --#{$variable-prefix}table-striped-bg
-    );
-    // box-shadow: $table-striped-dark;
     color: var(--#{$variable-prefix}table-striped-color);
   }
 }

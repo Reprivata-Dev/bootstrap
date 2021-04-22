@@ -223,7 +223,7 @@ $nav-tabs-link-color: $black;
 $nav-tabs-link-active-font-weight: 700;
 
 //Nav pills styles
-$nav-pills-link-active-background-color: $primary !important;
+$nav-pills-link-active-background-color: $primary;
 $nav-pills-link-color: $black;
 $nav-pills-active-link-color: $white;
 
@@ -294,4 +294,4 @@ $table-font-size: $font-size-lg;
 $table-data-padding: 0;
 $table-cell-padding-x: $spacer;
 // $table-striped-dark: inset 0 0 0 9999px $blue;
-// $table-striped-dark-bg: $blue;
+$table-striped-dark-bg: $blue;

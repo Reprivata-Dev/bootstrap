@@ -1735,11 +1735,11 @@ progress {
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 0.889;
   color: #212428;
   vertical-align: top;
   border-color: #dee2e6;
-  font-size: 1.125rem;
-  line-height: 0.889;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 1rem;
@@ -1781,9 +1781,7 @@ progress {
 }
 
 .table-dark .table-striped > tbody > tr:nth-of-type(odd) {
-  --bs-table-accent-bg: var(
-    --bs-table-striped-bg
-  );
+  --bs-table-accent-bg: $table-striped-dark-bg;
   color: var(--bs-table-striped-color);
 }
 
@@ -2160,10 +2158,10 @@ textarea.form-control-lg {
 }
 
 .form-select-lg {
-  line-height: 1.5;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
+  line-height: 1.5;
   font-size: 1.25rem;
 }
 
@@ -3634,7 +3632,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #bf0025 !important;
+  background-color: #bf0025;
   background-color: #bf0025;
 }
 
