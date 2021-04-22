@@ -45,6 +45,9 @@
       @extend %container-flex-properties;
     }
   }
+  .nav-link .active {
+    font-weight: 700;
+  }
 }
 
 // Navbar brand
@@ -231,7 +234,7 @@
 
   .navbar-toggler {
     color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    // border-color: $navbar-light-toggler-border-color;
   }
 
   .navbar-toggler-icon {
