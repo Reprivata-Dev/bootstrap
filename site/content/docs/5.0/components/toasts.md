@@ -181,7 +181,7 @@ Building on the above example, you can create different toast color schemes with
 
 {{< example class="bg-light" >}}
 
-<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast align-items-center text-white bg-danger-light border-0" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
       Hello, world! This is a toast message.

@@ -28,6 +28,7 @@ $purple: #6f42c1;
 $pink: #d63384;
 $red: #bf0025;
 $scarlet: #ea002d;
+$scarlet-light: #ffe221;
 $orange: #fd7e14;
 $yellow: #eabd00;
 $green: #17d351;
@@ -41,6 +42,7 @@ $colors: (
   "pink": $pink,
   "red": $red,
   "scarlet": $scarlet,
+  "scarlet-light": $scarlet-light,
   "orange": $orange,
   "yellow": $yellow,
   "green": $green,
@@ -57,6 +59,7 @@ $success: $green;
 $info: $blue;
 $warning: $yellow;
 $danger: $scarlet;
+$danger-light: $scarlet-light;
 $light: $gray-100;
 $dark: $gray-900;
 
@@ -67,19 +70,30 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
+  "danger-light": $danger-light,
   "light": $light,
   "dark": $dark,
 );
 
-// $scarlet-100: tint-color($scarlet, 80%);
-// $scarlet-200: tint-color($scarlet, 60%);
-// $scarlet-300: tint-color($scarlet, 40%);
-// $scarlet-400: tint-color($scarlet, 20%);
-// $scarlet-500: $scarlet;
-// $scarlet-600: shade-color($scarlet, 20%);
-// $scarlet-700: shade-color($scarlet, 40%);
-// $scarlet-800: shade-color($scarlet, 60%);
-// $scarlet-900: shade-color($scarlet, 80%);
+$scarlet-100: tint-color($scarlet, 80%);
+$scarlet-200: tint-color($scarlet, 60%);
+$scarlet-300: tint-color($scarlet, 30%);
+$scarlet-400: tint-color($scarlet, 20%);
+$scarlet-500: $scarlet;
+$scarlet-600: shade-color($scarlet, 20%);
+$scarlet-700: shade-color($scarlet, 40%);
+$scarlet-800: shade-color($scarlet, 60%);
+$scarlet-900: shade-color($scarlet, 80%);
+
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;
 
 // spacer
 $spacer: 1rem;
@@ -296,7 +310,13 @@ $table-cell-padding-x: $spacer;
 // $table-striped-dark: inset 0 0 0 9999px $blue;
 $table-striped-dark-bg: $blue;
 
-//Toast padding
+//Toast styles
 $toast-padding-y: $spacer;
 $toast-padding-x: $spacer;
+$toast-padding: $toast-padding-y $toast-padding-x map-get($spacers, 3);
 $toast-header-color: $black;
+
+//Alert styles
+$alert-border-radius: 0;
+$alert-left-border: map-get($border-widths, 4);
+$test: #00a2ea;
