@@ -120,7 +120,7 @@
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
-  border: none; // remove default button style
+  border: 0; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
   @include transition($navbar-toggler-transition);
 
@@ -178,14 +178,13 @@
             padding-left: $navbar-nav-link-padding-x;
             line-height: $small-font-size;
           }
-          .show > .nav-link,
+
           .nav-link.active {
             position: relative;
-            padding: $navbar-link-active-padding;
             top: $navbar-link-position-top;
+            padding: $navbar-link-active-padding;
             margin-top: $navbar-link-margin;
-            border-bottom: $navbar-link-border;
-            // line-height: $small-font-size;
+            border-bottom: $navbar-dark-link-border;
           }
         }
 
@@ -205,6 +204,7 @@
     }
   }
 }
+
 // scss-docs-end navbar-expand-loop
 
 // Navbar themes
@@ -224,13 +224,15 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-light-color;
       font-size: $small-font-size;
       font-weight: $navbar-link-font-weight;
       line-height: $small-font-size;
+      color: $navbar-light-color;
       &:hover,
       &:focus {
         color: $navbar-light-hover-color;
+        background: $navbar-light-hover-background-color;
+        border-radius: $navbar-hover-border-radius;
       }
 
       &.disabled {
@@ -240,10 +242,13 @@
 
     .show > .nav-link,
     .nav-link.active {
-      color: $navbar-light-active-color;
       font-size: $small-font-size;
       font-weight: $display-font-weight;
+      color: $navbar-light-active-color;
       // line-height: $small-font-size;
+      &:hover {
+        background: none;
+      }
     }
   }
 
@@ -280,13 +285,15 @@
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-dark-color;
       font-size: $small-font-size;
       font-weight: $navbar-link-font-weight;
       line-height: $small-font-size;
+      color: $navbar-dark-color;
       &:hover,
       &:focus {
         color: $navbar-dark-hover-color;
+        background: $navbar-dark-hover-background-color;
+        border-radius: $navbar-hover-border-radius;
       }
 
       &.disabled {
@@ -296,10 +303,14 @@
 
     .show > .nav-link,
     .nav-link.active {
-      color: $navbar-dark-active-color;
       font-size: $small-font-size;
       font-weight: $display-font-weight;
       line-height: $small-font-size;
+      color: $navbar-dark-active-color;
+
+      &:hover {
+        background: none;
+      }
     }
   }
 
