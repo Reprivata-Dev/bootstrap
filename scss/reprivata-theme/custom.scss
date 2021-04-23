@@ -28,7 +28,7 @@ $purple: #6f42c1;
 $pink: #d63384;
 $red: #bf0025;
 $scarlet: #ea002d;
-$scarlet-light: #ffe221;
+$scarlet-light: #f799ab;
 $orange: #fd7e14;
 $yellow: #eabd00;
 $green: #17d351;
@@ -42,7 +42,6 @@ $colors: (
   "pink": $pink,
   "red": $red,
   "scarlet": $scarlet,
-  "scarlet-light": $scarlet-light,
   "orange": $orange,
   "yellow": $yellow,
   "green": $green,
@@ -59,7 +58,6 @@ $success: $green;
 $info: $blue;
 $warning: $yellow;
 $danger: $scarlet;
-$danger-light: $scarlet-light;
 $light: $gray-100;
 $dark: $gray-900;
 
@@ -70,7 +68,6 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-  "danger-light": $danger-light,
   "light": $light,
   "dark": $dark,
 );

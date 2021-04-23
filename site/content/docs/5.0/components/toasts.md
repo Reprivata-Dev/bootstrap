@@ -32,7 +32,6 @@ Toasts are as flexible as you need and have very little required markup. At a mi
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     <strong class="me-auto">Bootstrap</strong>
-    <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
   <div class="toast-body">
@@ -48,7 +47,6 @@ Click the button the below to show as toast (positioning with our utilities in t
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
   <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
       <strong class="me-auto">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -100,7 +98,6 @@ Toasts are slightly translucent, too, so they blend over whatever they might app
 
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
     <strong class="me-auto">Bootstrap</strong>
     <small class="text-muted">11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -120,7 +117,6 @@ You can stack toasts by wrapping them in a toast container, which will verticall
 <div class="toast-container">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-muted">just now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -132,7 +128,6 @@ You can stack toasts by wrapping them in a toast container, which will verticall
 
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-muted">2 seconds ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -177,16 +172,43 @@ Alternatively, you can also add additional controls and components to toasts.
 
 ### Color schemes
 
-Building on the above example, you can create different toast color schemes with our [color]({{< docsref "/utilities/colors" >}}) and [background]({{< docsref "/utilities/background" >}}) utilities. Here we've added `.bg-primary` and `.text-white` to the `.toast`, and then added `.btn-close-white` to our close button. For a crisp edge, we remove the default border with `.border-0`.
+Building on the above example, you can create different toast variants with our semantic colors (danger, success, info, warning). For example, for a danger toast, users can add `.alert-danger`, whereas for success `.alert-success` can be added.
 
 {{< example class="bg-light" >}}
 
-<div class="toast align-items-center text-white bg-danger-light border-0" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast toast-danger align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
-      Hello, world! This is a toast message.
+      Hello, world! This is a danger toast message.
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+<br/>
+<div class="toast toast-success align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, world! This is a success toast message.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+<br/>
+<div class="toast toast-info align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, world! This is a info toast message.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+<br/>
+<div class="toast toast-warning align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, world! This is a warning toast message.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>
 {{< /example >}}

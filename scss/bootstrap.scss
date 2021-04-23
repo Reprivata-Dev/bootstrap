@@ -11,10 +11,11 @@
 @import "variables";
 
 @import "mixins";
-@import "utilities";
 
 //Custom theme
 @import "./reprivata-theme/custom";
+
+@import "utilities";
 
 // Layout & components
 @import "root";
