@@ -46,7 +46,7 @@
     }
   }
   .nav-link .active {
-    font-weight: 700;
+    font-weight: $display-font-weight;
   }
 }
 
@@ -120,7 +120,7 @@
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
+  border: none; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
   @include transition($navbar-toggler-transition);
 
@@ -172,10 +172,20 @@
           .dropdown-menu {
             position: absolute;
           }
-
+          //here
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
+            line-height: $small-font-size;
+          }
+          .show > .nav-link,
+          .nav-link.active {
+            position: relative;
+            padding: $navbar-link-active-padding;
+            top: $navbar-link-position-top;
+            margin-top: $navbar-link-margin;
+            border-bottom: $navbar-link-border;
+            // line-height: $small-font-size;
           }
         }
 
@@ -215,7 +225,9 @@
   .navbar-nav {
     .nav-link {
       color: $navbar-light-color;
-
+      font-size: $small-font-size;
+      font-weight: $navbar-link-font-weight;
+      line-height: $small-font-size;
       &:hover,
       &:focus {
         color: $navbar-light-hover-color;
@@ -229,6 +241,9 @@
     .show > .nav-link,
     .nav-link.active {
       color: $navbar-light-active-color;
+      font-size: $small-font-size;
+      font-weight: $display-font-weight;
+      // line-height: $small-font-size;
     }
   }
 
@@ -266,7 +281,9 @@
   .navbar-nav {
     .nav-link {
       color: $navbar-dark-color;
-
+      font-size: $small-font-size;
+      font-weight: $navbar-link-font-weight;
+      line-height: $small-font-size;
       &:hover,
       &:focus {
         color: $navbar-dark-hover-color;
@@ -280,6 +297,9 @@
     .show > .nav-link,
     .nav-link.active {
       color: $navbar-dark-active-color;
+      font-size: $small-font-size;
+      font-weight: $display-font-weight;
+      line-height: $small-font-size;
     }
   }
 

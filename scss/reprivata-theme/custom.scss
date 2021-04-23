@@ -285,3 +285,8 @@ $nav-tabs-link-active-font-weight: 700;
 $nav-pills-link-active-background-color: $primary;
 $nav-pills-link-color: $black;
 $nav-pills-active-link-color: $white;
+
+//Navbar styles
+$navbar-link-font-weight: 600;
+$navbar-link-active-padding-bottom: map-get($spacers, 4)
+$navbar-link-active-padding: 0 map-get($spacers, 4)

@@ -3760,7 +3760,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -3807,6 +3807,7 @@ textarea.form-control-lg {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: #00a2ea;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -3833,6 +3834,7 @@ textarea.form-control-lg {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: #00a2ea;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -3859,6 +3861,7 @@ textarea.form-control-lg {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: #00a2ea;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -3885,6 +3888,7 @@ textarea.form-control-lg {
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: #00a2ea;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -3910,6 +3914,7 @@ textarea.form-control-lg {
 .navbar-expand .navbar-nav .nav-link {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  color: #00a2ea;
 }
 .navbar-expand .navbar-nav-scroll {
   overflow: visible;
@@ -3930,6 +3935,9 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.55);
+  font-size: 0.889rem;
+  font-weight: 600;
+  line-height: 0.889rem;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -3940,6 +3948,9 @@ textarea.form-control-lg {
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
+  font-size: 0.889rem;
+  font-weight: 700;
+  line-height: 0.889rem;
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
@@ -3964,6 +3975,9 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
+  font-size: 0.889rem;
+  font-weight: 600;
+  line-height: 0.889rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
@@ -3974,6 +3988,9 @@ textarea.form-control-lg {
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+  font-size: 0.889rem;
+  font-weight: 700;
+  line-height: 0.889rem;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
