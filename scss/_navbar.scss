@@ -8,7 +8,6 @@
 // Navbar position
 // Navbar themes
 
-
 // Navbar
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -46,8 +45,10 @@
       @extend %container-flex-properties;
     }
   }
+  .nav-link .active {
+    font-weight: $display-font-weight;
+  }
 }
-
 
 // Navbar brand
 //
@@ -66,7 +67,6 @@
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 }
-
 
 // Navbar nav
 //
@@ -89,7 +89,6 @@
   }
 }
 
-
 // Navbar text
 //
 //
@@ -98,7 +97,6 @@
   padding-top: $nav-link-padding-y;
   padding-bottom: $nav-link-padding-y;
 }
-
 
 // Responsive navbar
 //
@@ -122,7 +120,7 @@
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
+  border: 0; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
   @include transition($navbar-toggler-transition);
 
@@ -174,10 +172,19 @@
           .dropdown-menu {
             position: absolute;
           }
-
+          //here
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
+            line-height: $small-font-size;
+          }
+
+          .nav-link.active {
+            position: relative;
+            top: $navbar-link-position-top;
+            padding: $navbar-link-active-padding;
+            margin-top: $navbar-link-margin;
+            border-bottom: $navbar-dark-link-border;
           }
         }
 
@@ -197,8 +204,8 @@
     }
   }
 }
-// scss-docs-end navbar-expand-loop
 
+// scss-docs-end navbar-expand-loop
 
 // Navbar themes
 //
@@ -217,11 +224,15 @@
 
   .navbar-nav {
     .nav-link {
+      font-size: $small-font-size;
+      font-weight: $navbar-link-font-weight;
+      line-height: $small-font-size;
       color: $navbar-light-color;
-
       &:hover,
       &:focus {
         color: $navbar-light-hover-color;
+        background: $navbar-light-hover-background-color;
+        border-radius: $navbar-hover-border-radius;
       }
 
       &.disabled {
@@ -231,13 +242,19 @@
 
     .show > .nav-link,
     .nav-link.active {
+      font-size: $small-font-size;
+      font-weight: $display-font-weight;
       color: $navbar-light-active-color;
+      // line-height: $small-font-size;
+      &:hover {
+        background: none;
+      }
     }
   }
 
   .navbar-toggler {
     color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    // border-color: $navbar-light-toggler-border-color;
   }
 
   .navbar-toggler-icon {
@@ -249,7 +266,7 @@
 
     a,
     a:hover,
-    a:focus  {
+    a:focus {
       color: $navbar-light-active-color;
     }
   }
@@ -268,11 +285,15 @@
 
   .navbar-nav {
     .nav-link {
+      font-size: $small-font-size;
+      font-weight: $navbar-link-font-weight;
+      line-height: $small-font-size;
       color: $navbar-dark-color;
-
       &:hover,
       &:focus {
         color: $navbar-dark-hover-color;
+        background: $navbar-dark-hover-background-color;
+        border-radius: $navbar-hover-border-radius;
       }
 
       &.disabled {
@@ -282,7 +303,14 @@
 
     .show > .nav-link,
     .nav-link.active {
+      font-size: $small-font-size;
+      font-weight: $display-font-weight;
+      line-height: $small-font-size;
       color: $navbar-dark-active-color;
+
+      &:hover {
+        background: none;
+      }
     }
   }
 

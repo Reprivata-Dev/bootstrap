@@ -182,6 +182,8 @@ $lead-font-size: $font-size-base * 1.125;
 $lead-font-weight: 400;
 $small-font-size: 0.889rem;
 
+// Style anchor elements.
+$link-color: $red;
 $subtitle-lg-font-size: 1.125rem;
 $subtitle-sm-font-size: 1rem;
 $caption-font-size: 0.79rem;
@@ -263,7 +265,7 @@ $accordion-header-font-size: $font-size-base;
 $accordion-button-active-color: $dark;
 $accordion-button-active-bg: none;
 $accordion-button-focus-border-color: $blue;
-$accordion-button-focus-outline: $blue $border-width solid;
+// $accordion-button-focus-outline: $blue $border-width solid;
 $accordion-button-padding-x: $spacer;
 $accordion-icon-width: $font-size-base;
 
@@ -283,6 +285,33 @@ $form-text-font-size: $caption-font-size;
 $form-text-margin-top: map-get($spacers, 4);
 //Form Check
 $form-check-input-checked-bg-color: $primary;
+//Tabs styles
+$nav-tabs-link-active-border-top-color: $primary map-get($border-widths, 2)
+  solid;
+$nav-tabs-border-radius: 0;
+// $nav-tabs-link-active-border-top-color: $primary 5px solid;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-color: $black;
+$nav-tabs-link-active-font-weight: 700;
+
+//Nav pills styles
+$nav-pills-link-active-background-color: $primary;
+$nav-pills-link-color: $black;
+$nav-pills-active-link-color: $white;
+
+//Navbar styles
+$navbar-link-font-weight: 600;
+$navbar-link-active-padding-bottom: map-get($spacers, 1) * 10;
+$navbar-link-active-padding: 0 map-get($spacers, 3)
+  $navbar-link-active-padding-bottom;
+$navbar-link-position-top: map-get($spacers, 1) * 6;
+$navbar-link-margin: map-get($spacers, 1) * -2;
+
+$navbar-dark-link-border: $white solid map-get($border-widths, 2);
+$navbar-dark-hover-background-color: rgba($white, 0.15);
+$navbar-light-hover-background-color: rgba($black, 0.15);
+$navbar-hover-border-radius: $btn-border-radius;
+$navbar-light-link-border: $black solid map-get($border-widths, 2);
 
 //Form select
 $form-select-border-color: $input-border-color;
