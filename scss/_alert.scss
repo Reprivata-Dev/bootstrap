@@ -5,7 +5,12 @@
 .alert {
   position: relative;
   padding: $alert-padding-y $alert-padding-x;
+
   margin-bottom: $alert-margin-bottom;
+  font-size: $font-size-sm;
+
+  line-height: $line-height-base;
+
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
 }
@@ -20,7 +25,6 @@
 .alert-link {
   font-weight: $alert-link-font-weight;
 }
-
 
 // Dismissible alerts
 //
@@ -39,7 +43,6 @@
   }
 }
 
-
 // scss-docs-start alert-modifiers
 // Generate contextual modifier classes for colorizing the alert.
 
@@ -48,10 +51,50 @@
   $alert-border: shift-color($value, $alert-border-scale);
   $alert-color: shift-color($value, $alert-color-scale);
   @if (contrast-ratio($alert-background, $alert-color) < $min-contrast-ratio) {
-    $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
+    $alert-color: mix(
+      $value,
+      color-contrast($alert-background),
+      abs($alert-color-scale)
+    );
   }
   .alert-#{$state} {
     @include alert-variant($alert-background, $alert-border, $alert-color);
   }
 }
+
+.alert-primary {
+  color: $black;
+  background: $red-200;
+  border-left: $alert-left-border solid $red-600;
+}
+
+.alert-secondary {
+  color: $black;
+  border-left: $alert-left-border solid $gray-600;
+}
+
+.alert-success {
+  color: $black;
+  background: $green-200;
+  border-left: $alert-left-border solid $green-600;
+}
+
+.alert-danger {
+  color: $black;
+  background: $scarlet-200;
+  border-left: $alert-left-border solid $scarlet-600;
+}
+
+.alert-warning {
+  color: $black;
+  background: $yellow-200;
+  border-left: $alert-left-border solid $yellow-600;
+}
+
+.alert-info {
+  color: $black;
+  background: $blue-200;
+  border-left: $alert-left-border solid $blue-600;
+}
+
 // scss-docs-end alert-modifiers

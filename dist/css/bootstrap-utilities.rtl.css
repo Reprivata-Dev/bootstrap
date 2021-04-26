@@ -18,10 +18,10 @@
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: #212428;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64;
+  color: #1a1d20;
 }
 
 .link-success {
@@ -60,10 +60,10 @@
 }
 
 .link-dark {
-  color: #212529;
+  color: #212428;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: #1a1d20;
 }
 
 .ratio {
@@ -425,7 +425,7 @@
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #212428 !important;
 }
 
 .border-success {
@@ -449,7 +449,7 @@
 }
 
 .border-dark {
-  border-color: #212529 !important;
+  border-color: #212428 !important;
 }
 
 .border-white {
@@ -1246,7 +1246,7 @@
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #212428 !important;
 }
 
 .text-success {
@@ -1270,7 +1270,7 @@
 }
 
 .text-dark {
-  color: #212529 !important;
+  color: #212428 !important;
 }
 
 .text-white {
@@ -1278,7 +1278,7 @@
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #212428 !important;
 }
 
 .text-muted {
@@ -1302,7 +1302,7 @@
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #212428 !important;
 }
 
 .bg-success {
@@ -1326,7 +1326,7 @@
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #212428 !important;
 }
 
 .bg-body {
