@@ -64,9 +64,9 @@
 }
 
 .form-select-lg {
-  line-height: $line-height-base;
   padding-top: $form-select-padding-y-lg;
   padding-bottom: $form-select-padding-y-lg;
   padding-left: $form-select-padding-x-lg;
+  line-height: $line-height-base;
   @include font-size($form-select-font-size-lg);
 }

@@ -3,11 +3,14 @@
 //
 
 .alert {
-  font-size: $font-size-sm;
-  line-height: $line-height-base;
   position: relative;
   padding: $alert-padding-y $alert-padding-x;
+
   margin-bottom: $alert-margin-bottom;
+  font-size: $font-size-sm;
+
+  line-height: $line-height-base;
+
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
 }

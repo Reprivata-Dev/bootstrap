@@ -32,12 +32,13 @@
 .toast-header {
   display: flex;
   align-items: center;
-  padding: $toast-padding-y $toast-padding-x;
+  padding: $toast-padding;
   color: $toast-header-color;
   background-color: $toast-header-background-color;
   background-clip: padding-box;
-  border-bottom: $toast-border-width solid $toast-header-border-color;
-  @include border-top-radius(subtract($toast-border-radius, $toast-border-width));
+  @include border-top-radius(
+    subtract($toast-border-radius, $toast-border-width)
+  );
 
   .btn-close {
     margin-right: $toast-padding-x / -2;
@@ -48,4 +49,28 @@
 .toast-body {
   padding: $toast-padding-x; // apply to both vertical and horizontal
   word-wrap: break-word;
+}
+
+.toast-danger {
+  color: $black;
+  background: $scarlet-200;
+  border-left: $alert-left-border solid $scarlet-600;
+}
+
+.toast-info {
+  color: $black;
+  background: $blue-200;
+  border-left: $alert-left-border solid $blue-600;
+}
+
+.toast-success {
+  color: $black;
+  background: $green-200;
+  border-left: $alert-left-border solid $green-600;
+}
+
+.toast-warning {
+  color: $black;
+  background: $yellow-200;
+  border-left: $alert-left-border solid $yellow-600;
 }
