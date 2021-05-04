@@ -1,5 +1,5 @@
 $white: #fff;
-$gray-100: #f8f9fa;
+$gray-100: #f2f2f2;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
@@ -349,3 +349,7 @@ $test: #00a2ea;
 
 //Tooltip
 $tooltip-font-weight: 600;
+
+//Progress bar styles
+$progress-bg: $gray-100;
+$progress-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
