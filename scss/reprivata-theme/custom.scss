@@ -347,6 +347,11 @@ $alert-border-radius: 0;
 $alert-left-border: map-get($border-widths, 4);
 $test: #00a2ea;
 
+//List group item border
+$list-group-border-color: $black;
+$list-group-disabled-color: rgba(0, 0, 0, 0.4);
+$list-group-hover-bg: $gray-200;
+$list-group-action-hover-color: $black;
 //Dropdown
 $dropdown-padding-y: 0;
 $dropdown-border-color: $black;
